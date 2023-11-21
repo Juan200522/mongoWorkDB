@@ -1,0 +1,224 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+    {
+        "_id": {
+            "$oid": "655bccdea1081a1b6cd7c991"
+    },
+        "title": "Mascota1",
+        "price": 750000,
+        "description": "Gato de 7 meses de nacido",
+        "category": "Abisinio ",
+        "image": "mascota1.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd0f7a1081a1b6cd7c992"
+    },
+        "title": "Mascota2",
+        "price": 800000,
+        "description": "Gato de 8 meses de nacido",
+        "category": "betra",
+        "image": "mascota2.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd0f7a1081a1b6cd7c993"
+    },
+        "title": "Mascota3",
+        "price": 900000,
+        "description": "Gato de 9 meses de nacido",
+        "category": " quiz3",
+        "image": "mascota3.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd31ba1081a1b6cd7c994"
+    },
+        "title": "Mascota 4",
+        "price": 950000,
+        "description": "Gato de 10 meses de nacido",
+        "category": " Hilux 4",
+        "image": "mascota4.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd31ba1081a1b6cd7c995"
+    },
+        "title": "Mascota5",
+        "price": 1200000,
+        "description": "Gato de 11 meses de nacido",
+        "category": "canino5",
+        "image": "imagen5.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd3b9a1081a1b6cd7c996"
+    },
+        "title": "Mascota6",
+        "price": 1100000,
+        "description": "Gato de 12 meses de nacido",
+        "category": "Nueva Categoría 6",
+        "image": "imagen6.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd3b9a1081a1b6cd7c997"
+    },
+        "title": "Mascota7",
+        "price": 1000000,
+        "description": "Gato de 13 meses de nacido",
+        "category": "criollo7",
+        "image": "https://nueva-url-de-la-imagen.com/nueva-imagen-7.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd5a0a1081a1b6cd7c998"
+    },
+        "title": "Mascota Actualizada 8",
+        "price": 900000,
+        "description": "Gato de 14 meses de nacido",
+        "category": "mamifero1",
+        "image": "https://nueva-url-de-la-imagen.com/nueva-imagen-8.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd5a0a1081a1b6cd7c999"
+    },
+        "title": "Mascota9",
+        "price": 1000000,
+        "description": "Gato de 15 meses de nacido",
+        "category": "mamifero2",
+        "image": "imagen9.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd5a0a1081a1b6cd7c99a"
+        },
+        "title": "ave3",
+        "price": 1000000,
+        "description": "Guacamaya con 5 meses de nacido",
+        "category": "Guacamaya",
+        "image": "ave3"
+    },
+    {
+        "_id": {
+            "$oid": "655bd8cea1081a1b6cd7c99b"
+    },
+        "title": "pez1",
+        "price": 10000,
+        "description": "Pez guppy en venta",
+        "category": "Guppy",
+        "image": "pez1.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd8cea1081a1b6cd7c99c"
+    },
+        "title": "pez2",
+        "price": 60000,
+        "description": "pez angel en venta",
+        "category": "Pez angel",
+        "image": "pez2.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd8cea1081a1b6cd7c99d"
+    },
+        "title": "pez3",
+        "price": 30000,
+        "description": "pez betta en venta",
+        "category": "Betta",
+        "image": "pez3"
+    },
+    {
+        "_id": {
+            "$oid": "655bd8cea1081a1b6cd7c99e"
+    },
+        "title": "pez4",
+        "price": 40000,
+        "description": "pez platy en venta",
+        "category": "Platy",
+        "image": "pez4.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bd8cea1081a1b6cd7c99f"
+    },
+        "title": "pez5",
+        "price": 50000,
+        "description": "pez guramis en venta",
+        "category": "pez guramis en venta",
+        "image": "pez5.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bdadea1081a1b6cd7c9a0"
+    },
+        "title": "mamifero1",
+        "price": 3000000,
+        "description": "caballo en venta",
+        "category": "Caballo",
+        "image": "mamifero1.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bdadea1081a1b6cd7c9a1"
+    },
+        "title": "mamifero2",
+        "price": 3000000,
+        "description": "oveja en venta",
+        "category": "Oveja",
+        "image": "mamifero2.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bdadea1081a1b6cd7c9a2"
+    },
+        "title": "mamifero3",
+        "price": 200000000,
+        "description": "elefante en venta",
+        "category": "elefante",
+        "image": "mamifero3.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bdadea1081a1b6cd7c9a3"
+    },
+        "title": "mamifero4",
+        "price": 80000000,
+        "description": "ardilla en venta",
+        "category": "Ardilla",
+        "image": "mamifero4.jpg"
+    },
+    {
+        "_id": {
+            "$oid": "655bdadea1081a1b6cd7c9a4"
+    },
+        "title": "mamifero5",
+        "price": 300000000,
+        "description": "chimpanse en venta",
+        "category": "chimpance",
+        "image": "mamifero5.jpg"
+    },
+    {
+        "_id": 1,
+        "title": "Gato hola",
+        "price": 100000,
+        "description": "Gato de 5 meses de nacido",
+        "category": "Abisinio",
+        "image": "hola.jpg"
+    },
+    {
+        "_id": 2,
+        "title": "Gato hola",
+        "price": 100000,
+        "description": "Gato de 5 meses de nacido",
+        "category": "Abisinio",
+        "image": "hola.jpg"
+    }
+  ])
