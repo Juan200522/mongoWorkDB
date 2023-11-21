@@ -1,0 +1,107 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+    {
+  "_id": {
+    "$oid": "655bccdea1081a1b6cd7c991"
+  },
+  "title": "Mascota Actualizada 1",
+  "price": 750000,
+  "description": "Gato de 7 meses de nacido",
+  "category": "Abisinio Actualizado",
+  "image": "imagen-1.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd0f7a1081a1b6cd7c992"
+  },
+  "title": "Mascota Actualizada 2",
+  "price": 800000,
+  "description": "Gato de 8 meses de nacido",
+  "category": "Otra Categoría Actualizada",
+  "image": "imagen-2.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd0f7a1081a1b6cd7c993"
+  },
+  "title": "Mascota Actualizada 3",
+  "price": 900000,
+  "description": "Gato de 9 meses de nacido",
+  "category": "Nueva Categoría 3",
+  "image": "imagen-3.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd31ba1081a1b6cd7c994"
+  },
+  "title": "Mascota Actualizada 4",
+  "price": 950000,
+  "description": "Gato de 10 meses de nacido",
+  "category": "Nueva Categoría 4",
+  "image": "imagen-4.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd31ba1081a1b6cd7c995"
+  },
+  "title": "Mascota Actualizada 5",
+  "price": 1200000,
+  "description": "Gato de 11 meses de nacido",
+  "category": "Nueva Categoría 5",
+  "image": "imagen-5.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd3b9a1081a1b6cd7c996"
+  },
+  "title": "Mascota Actualizada 6",
+  "price": 1100000,
+  "description": "Gato de 12 meses de nacido",
+  "category": "Nueva Categoría 6",
+  "image": "imagen-6.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd3b9a1081a1b6cd7c997"
+  },
+  "title": "Mascota Actualizada 7",
+  "price": 1000000,
+  "description": "Gato de 13 meses de nacido",
+  "category": "Nueva Categoría 7",
+  "image": "imagen-7.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd5a0a1081a1b6cd7c998"
+  },
+  "title": "Mascota Actualizada 8",
+  "price": 900000,
+  "description": "Gato de 14 meses de nacido",
+  "category": "Nueva Categoría 8",
+  "image": "imagen-8.jpg"
+},
+{
+  "_id": {
+    "$oid": "655bd5a0a1081a1b6cd7c999"
+  },
+  "title": "Mascota Actualizada 9",
+  "price": 1000000,
+  "description": "Gato de 15 meses de nacido",
+  "category": "Nueva Categoría 9",
+  "image": "imagen-9.jpg"
+},
+
+{
+  "_id": {
+    "$oid": "655bdadea1081a1b6cd7c9a3"
+  },
+  "title": "Mascota Actualizada 10",
+  "price": 1000000,
+  "description": "Gato de 15 meses de nacido",
+  "category": "Categoría10",
+  "image": "imagen10.jpg"
+}
+)
